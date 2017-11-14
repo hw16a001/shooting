@@ -37,6 +37,9 @@ void Update()
     }
 
     // 弾の移動
+    if(bulletPos.x>=315){
+        bulletPos.x = -999;
+    }
     if (bulletPos.x > -999) {
         bulletPos.x += 150 * Time::deltaTime;
 
